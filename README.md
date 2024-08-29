@@ -5,7 +5,7 @@ Divided into 2 version, Public and Secure, with only a couple difference in secu
 Secure mode only allows NyatOS admin users to output redstone signal for opening doors or whatever.
 It also disallows the Guest user from logging in entirely.
 
-Default user logins are as follows:
+Default user logins are as follows:<br />
 <br />
 AdminUser: Riku<br />
 AdminPass: 1111<br />
