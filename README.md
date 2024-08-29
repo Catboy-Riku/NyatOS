@@ -1,5 +1,7 @@
 # NyatOS
-Simple text based OS with Musicify integration for Computer Craft.
+Welcome to the Neko Yip Advanced Text Operating System! Or NyatOS for short.
+The official operating system of Nyatopia! (Thats just my colony lol)
+A simple text based OS with Musicify integration and some other programs for Computer Craft.
 
 Divided into 2 versions, Public and Secure, with only a couple differences in secure mode.<br />
 Secure mode only allows NyatOS admin users to output redstone signal for opening doors or whatever.<br />
