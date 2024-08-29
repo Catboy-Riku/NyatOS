@@ -212,6 +212,14 @@
     },
     {
       "type":"song",
+      "name":";3",
+      "author": "SHTEPPI!",
+      "speed": 1,
+      "file":"https://github.com/Real-DJ-Lucky/NyatOS/raw/main/music/%3B3.dfpwm",
+      "time": 103
+    },
+    {
+      "type":"song",
       "name":"UFO!",
       "author":"SHTEPPI!",
       "speed":1,
@@ -225,14 +233,6 @@
       "speed":1,
       "file":"https://github.com/Real-DJ-Lucky/NyatOS/raw/main/music/OPPER%20STOPPER%21.dfpwm",
       "time":99
-    },
-    {
-      "type":"song",
-      "name":";3",
-      "author": "SHTEPPI!",
-      "speed": 1,
-      "file":"https://github.com/Real-DJ-Lucky/NyatOS/raw/main/music/%3B3.dfpwm",
-      "time": 103
     },
     {
       "type":"song",
