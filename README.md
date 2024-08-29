@@ -7,11 +7,11 @@ It also disallows the Guest user from logging in entirely.<br />
 
 Default user logins are as follows:<br />
 <br />
-Admin User: Riku<br />
-Admin Pass: 1111<br />
+Admin User : Riku<br />
+Admin Pass : 1111<br />
 <br />
-Guest User: Guest<br />
-Guest Pass: $pass42<br />
+Guest User : Guest<br />
+Guest Pass : $pass42<br />
 <br />
 <br />
 Keep in mind that the logins are case-sensitive.<br />
