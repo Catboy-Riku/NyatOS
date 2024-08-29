@@ -4,6 +4,22 @@
   "songs": [
     {
       "type":"song",
+      "name":"1979",
+      "author":"Smashing Pumpkins",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/1979.dfpwm",
+      "time":262
+    },
+    {
+      "type":"song",
+      "name":"Cherub Rock",
+      "author":"Smashing Pumpkins",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Cherub Rock.dfpwm",
+      "time":300
+    },
+    {
+      "type":"song",
       "name":"Meow Mix",
       "author": "meowballz",
       "speed": 1,
@@ -12,235 +28,219 @@
     },
     {
       "type":"song",
-      "name":"Supersonic VIP",
-      "author": "Skrillex, Nosia",
+      "name":"Astronomical",
+      "author":"Travis Scott",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Astronomical.dfpwm",
+      "time":538
+    },
+    {
+      "type":"song",
+      "name":"bounce (i just wanna dance)",
+      "author":"Joyful",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/bounce (i just wanna dance).dfpwm",
+      "time":107
+    },
+    {
+      "type":"song",
+      "name":"Calling You Up",
+      "author":"The EX-Box Boys",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Calling You Up.dfpwm",
+      "time":202
+    },
+    {
+      "type":"song",
+      "name":"EMMV",
+      "author":"Cyranek",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/EMMV.dfpwm",
+      "time":731
+    },
+    {
+      "type":"song",
+      "name":"21 Guns",
+      "author":"Green Day",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/21 Guns.dfpwm",
+      "time": 326
+    },
+    {
+      "type":"song",
+      "name":"4 A.M.",
+      "author":"Taeko Onuki",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/4 A.M.dfpwm",
+      "time":337
+    },
+    {
+      "type":"song",
+      "name":"Hana",
+      "author":"Fujii Kaze",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Hana.dfpwm",
+      "time":247
+    },
+    {
+      "type":"song",
+      "name":"I Can't Stop The Loneliness",
+      "author":"ANRI",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/I Can't Stop The Loneliness.dfpwm",
+      "time":264
+    },
+    {
+      "type":"song",
+      "name":"Lady (Hear Me Tonight)",
+      "author":"Modjo",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Lady (Hear Me Tonight).dfpwm",
+      "time":307
+    },
+    {
+      "type":"song",
+      "name":"Another Song About The Weekend",
+      "author":"A Day To Remember",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Another Song About The Weekend.dfpwm",
+      "time":223
+    },
+    {
+      "type":"song",
+      "name":"Instrumental",
+      "author":"Black Country New Road",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Instrumental.dfpwm",
+      "time":328
+    },
+    {
+      "type":"song",
+      "name":"Dinosaurs Will Die",
+      "author":"NOFX",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Dinosaurs Will Die.dfpwm",
+      "time":171
+    },
+    {
+      "type":"song",
+      "name":"Face Down",
+      "author":"The Red Jumpsuit Apparatus",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Face Down.dfpwm",
+      "time":192
+    },
+    {
+      "type":"song",
+      "name":"Out with a Bang",
+      "author":"sElf",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Out with a Bang.dfpwm",
+      "time":207
+    },
+    {
+      "type":"song",
+      "name":"Reptilia",
+      "author":"The Strokes",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Reptilia.dfpwm",
+      "time":216
+    },
+    {
+      "type":"song",
+      "name":"Alfredo",
+      "author":"afourteen",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Alfredo.dfpwm",
+      "time":170
+    },
+    {
+      "type":"song",
+      "name":"BLACK SHEEP",
+      "author":"Lil Darkie",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/BLACK SHEEP.dfpwm",
+      "time":292
+    },
+    {
+      "type":"song",
+      "name":"COMFORT IN DISCOMFORT",
+      "author":"Lil Darkie",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/COMFORT IN DISCOMFORT.dfpwm",
+      "time":519
+    },
+    {
+      "type":"song",
+      "name":"Euphemia",
+      "author":"Area 11",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Euphemia.dfpwm",
+      "time":286
+    },
+    {
+      "type":"song",
+      "name":"All The Lights In The Sky",
+      "author":"Area 11",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/All The Lights In The Sky.dfpwm",
+      "time":289
+    },
+    {
+      "type":"song",
+      "name":"Heaven-Piercing Giga Drill",
+      "author":"Area 11",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Heaven-Piercing Giga Drill.dfpwm",
+      "time":259
+    },
+    {
+      "type":"song",
+      "name":"Knightmare-Frame",
+      "author":"Area 11",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Knightmare-Frame.dfpwm",
+      "time":205
+    },
+    {
+      "type":"song",
+      "name":"Minecraft Christmas",
+      "author":"Area 11, The Yogscast",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/Minecraft Christmas.dfpwm",
+      "time":343
+    },
+    {
+      "type":"song",
+      "name":"UFO!",
+      "author":"SHTEPPI!",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/UFO!.dfpwm",
+      "time":115
+    },
+    {
+      "type":"song",
+      "name":"OPPER STOPPER!",
+      "author":"SHTEPPI!",
+      "speed":1,
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/OPPER STOPPER!.dfpwm",
+      "time":99
+    },
+    {
+      "type":"song",
+      "name":";3",
+      "author": "SHTEPPI!",
       "speed": 1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/skrillex/skrillex-supersonic.dfpwm",
-      "time": 206
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/;3.dfpwm",
+      "time": 103
     },
     {
       "type":"song",
-      "name":"Mystery Circles Ultra / U.U.F.O.",
-      "author":"Camellia",
+      "name":"POV I OLLIE OVER UR GRAVE!",
+      "author":"SHTEPPI!",
       "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-01.dfpwm",
-      "time":239
-    },
-    {
-      "type":"song",
-      "name":"(The) Red * Room",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-02.dfpwm",
-      "time":231
-    },
-    {
-      "type":"song",
-      "name":"Labyrinth in Kowloon: Walled World",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-03.dfpwm",
-      "time":254
-    },
-    {
-      "type":"song",
-      "name":"Electromagnetic Stealth Girl Born In Philadelphia",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-04.dfpwm",
-      "time":295
-    },
-    {
-      "type":"song",
-      "name":"Zhuzhzhalka76",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-05.dfpwm",
-      "time":274
-    },
-    {
-      "type":"song",
-      "name":"KillerToy",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-06.dfpwm",
-      "time":277
-    },
-    {
-      "type":"song",
-      "name":"POLYBIUS GB SPEEDRUN -Glitchless 100% WR in 0:03:57-",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-07.dfpwm",
-      "time":245
-    },
-    {
-      "type":"song",
-      "name":"Tentaclar Aliens' Epic Extraterretterrestrial Jungle Dance Party Inside Of A Super-Ultra-Mega-Gigantic U.F.O",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-08.dfpwm",
-      "time":303
-    },
-    {
-      "type":"song",
-      "name":"FINAL BLENDERMAN APPEARED.",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-09.dfpwm",
-      "time":339
-    },
-    {
-      "type":"song",
-      "name":"WYSI -When You See It-",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-10.dfpwm",
-      "time":197
-    },
-    {
-      "type":"song",
-      "name":"We Magicians Still Alive in 2021",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-11.dfpwm",
-      "time":278
-    },
-    {
-      "type":"song",
-      "name":"AREA 52",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-12.dfpwm",
-      "time":278
-    },
-    {
-      "type":"song",
-      "name":"Kisaragi",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-13.dfpwm",
-      "time":355
-    },
-    {
-      "type":"song",
-      "name":"Bermuda Triangle",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-14.dfpwm",
-      "time":240
-    },
-    {
-      "type":"song",
-      "name":"CICIDA3302",
-      "author":"Camellia, The8BitDrummer",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-15.dfpwm",
-      "time":436
-    },
-    {
-      "type":"song",
-      "name":"Slime Incident",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-16.dfpwm",
-      "time": 305
-    },
-    {
-      "type":"song",
-      "name":"The Cat Evolved Into The Microwave-proof Cat!",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-17.dfpwm",
-      "time":228
-    },
-    {
-      "type":"song",
-      "name":"ZOMBIE CURCUS",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-18.dfpwm",
-      "time":240
-    },
-    {
-      "type":"song",
-      "name":"t / a/n a/s / i/n / n",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-19.dfpwm",
-      "time":204
-    },
-    {
-      "type":"song",
-      "name":"Purge My Existence Out Of This World",
-      "author":"Camellia, BTMC",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-20.dfpwm",
-      "time":309
-    },
-    {
-      "type":"song",
-      "name":"GHOUL",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-21.dfpwm",
-      "time":271
-    },
-    {
-      "type":"song",
-      "name":"Myths You Forgot",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-22.dfpwm",
-      "time":255
-    },
-    {
-      "type":"song",
-      "name":"OOPARTS",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-23.dfpwm",
-      "time":408
-    },
-    {
-      "type":"song",
-      "name":"Hello (BPM) 2021",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-24.dfpwm",
-      "time":143
-    },
-    {
-      "type":"song",
-      "name":"THE MUZZLE FACING - Long muzzled version",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-25.dfpwm",
-      "time":311
-    },
-    {
-      "type":"song",
-      "name":"#1f1e33 - #00102g version",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-26.dfpwm",
-      "time":341
-    },
-    {
-      "type":"song",
-      "name":"Looking for Edge of Ground",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/uufo/camellia-uufo-27.dfpwm",
-      "time":271
-    },
-    {
-      "type":"song",
-      "name":"Finorza",
-      "author":"Camellia",
-      "speed":1,
-      "file":"https://github.com/knijn/musicify-songs/raw/main/camellia/camellia-finorza.dfpwm",
-      "time":271
+      "file":"https://github.com/Real-DJ-Lucky/musicify-songs/raw/main/POV I OLLIE OVER UR GRAVE!.dfpwm",
+      "time":105
     }
   ]
 }
