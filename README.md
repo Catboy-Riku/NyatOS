@@ -1,5 +1,5 @@
 # NyatOS
-Simple text based OS for computer craft ith several programs included.
+Simple text based OS for computer craft with several programs included.
 
 Divided into 2 version, Public and Secure, with only a couple difference in secure mode.<br />
 Secure mode only allows NyatOS admin users to output redstone signal for opening doors or whatever.<br />
