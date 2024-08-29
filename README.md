@@ -6,17 +6,17 @@ Secure mode only allows NyatOS admin users to output redstone signal for opening
 It also disallows the Guest user from logging in entirely.
 
 Default user logins are as follows:
-
-AdminUser: Riku
-AdminPass: 1111
-
-GuestUser: Guest
-GuestPass: $pass42
-
+<br />
+AdminUser: Riku<br />
+AdminPass: 1111<br />
+<br />
+GuestUser: Guest<br />
+GuestPass: $pass42<br />
+<br />
 I would highly recommend changing the admin password and username by using the OS after installing.
 Simply login using the default admin login, then change what you want from there.
-
-
+<br />
+<br />
 
 #Installation
 
