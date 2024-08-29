@@ -13,11 +13,13 @@ AdminPass: 1111<br />
 GuestUser: Guest<br />
 GuestPass: $pass42<br />
 <br />
+<br />
 I would highly recommend changing the admin password and username by using the OS after installing.
 Simply login using the default admin login, then change what you want from there.
 <br />
 <br />
-
+<br />
+<br />
 #Installation
 
 Installing NyatOS is super easy, just type ONE of the commands below into a fresh computer.
