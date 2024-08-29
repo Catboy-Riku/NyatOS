@@ -7,11 +7,11 @@ It also disallows the Guest user from logging in entirely.<br />
 
 Default user logins are as follows:<br />
 <br />
-AdminUser: Riku<br />
-AdminPass: 1111<br />
+Admin User: Riku<br />
+Admin Pass: 1111<br />
 <br />
-GuestUser: Guest<br />
-GuestPass: $pass42<br />
+Guest User: Guest<br />
+Guest Pass: $pass42<br />
 <br />
 <br />
 Keep in mind that the logins are case-sensitive.<br />
@@ -22,11 +22,11 @@ Simply login using the default admin login, then change what you want from there
 
 Installing NyatOS is super easy, just type ONE of the commands below into a fresh computer.
 
-For NyatOS Public type:
+For NyatOS [Public](https://pastebin.com/jewpSesL) type:
 ```
 wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installPublic.lua
 ```
-For NyatOS Secure type:
+For NyatOS [Secure](https://pastebin.com/XFgHwpHA) type:
 ```
 wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installSecure.lua
 ```
