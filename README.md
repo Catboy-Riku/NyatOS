@@ -1,7 +1,7 @@
 # NyatOS
 Simple text based OS for computer craft with several programs included.
 
-Divided into 2 version, Public and Secure, with only a couple difference in secure mode.<br />
+Divided into 2 versions, Public and Secure, with only a couple differences in secure mode.<br />
 Secure mode only allows NyatOS admin users to output redstone signal for opening doors or whatever.<br />
 It also disallows the Guest user from logging in entirely.<br />
 
