@@ -20,7 +20,10 @@ Simply login using the default admin login, then change what you want from there
 Installing NyatOS is super easy, just type ONE of the commands below into a fresh computer.
 
 For NyatOS Public type:
+```
 wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installPublic.lua
-
+```
 For NyatOS Secure type:
+```
 wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installSecure.lua
+```
