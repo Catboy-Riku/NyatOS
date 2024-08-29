@@ -20,7 +20,7 @@ Simply login using the default admin login, then change what you want from there
 <br />
 <br />
 <br />
-#Installation
+# Installation
 
 Installing NyatOS is super easy, just type ONE of the commands below into a fresh computer.
 
