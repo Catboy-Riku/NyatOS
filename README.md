@@ -30,9 +30,9 @@ wait for it to ask you to press enter, then it should reboot automatically into 
 
 For NyatOS [Public](https://pastebin.com/jewpSesL) type:
 ```
-wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installPublic.lua
+wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installPublic.lua
 ```
 For NyatOS [Secure](https://pastebin.com/XFgHwpHA) type:
 ```
-wget run https://raw.githubusercontent.com/Real-DJ-Lucky/NyatOS/main/installSecure.lua
+wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installSecure.lua
 ```
