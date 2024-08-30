@@ -180,6 +180,30 @@
     },
     {
       "type":"song",
+      "name":"UFO!",
+      "author":"SHTEPPI!",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/UFO%21.dfpwm",
+      "time":115
+    },
+    {
+      "type":"song",
+      "name":"OPPER STOPPER!",
+      "author":"SHTEPPI!",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/OPPER%20STOPPER%21.dfpwm",
+      "time":99
+    },
+    {
+      "type":"song",
+      "name":"POV I OLLIE OVER UR GRAVE!",
+      "author":"SHTEPPI!",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/POV%20I%20OLLIE%20OVER%20UR%20GRAVE%21.dfpwm",
+      "time":105
+    },
+    {
+      "type":"song",
       "name":"Euphemia",
       "author":"Area 11",
       "speed":1,
@@ -217,30 +241,6 @@
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Minecraft%20Christmas.dfpwm",
       "time":343
-    },
-    {
-      "type":"song",
-      "name":"UFO!",
-      "author":"SHTEPPI!",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/UFO%21.dfpwm",
-      "time":115
-    },
-    {
-      "type":"song",
-      "name":"OPPER STOPPER!",
-      "author":"SHTEPPI!",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/OPPER%20STOPPER%21.dfpwm",
-      "time":99
-    },
-    {
-      "type":"song",
-      "name":"POV I OLLIE OVER UR GRAVE!",
-      "author":"SHTEPPI!",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/POV%20I%20OLLIE%20OVER%20UR%20GRAVE%21.dfpwm",
-      "time":105
     }
   ]
 }
