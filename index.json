@@ -4,22 +4,6 @@
   "songs": [
     {
       "type":"song",
-      "name":"1979",
-      "author":"Smashing Pumpkins",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/1979.dfpwm",
-      "time":262
-    },
-    {
-      "type":"song",
-      "name":"Cherub Rock",
-      "author":"Smashing Pumpkins",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Cherub%20Rock.dfpwm",
-      "time":300
-    },
-    {
-      "type":"song",
       "name":"Meow Mix",
       "author": "meowballz",
       "speed": 1,
@@ -33,14 +17,6 @@
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Astronomical.dfpwm",
       "time":538
-    },
-    {
-      "type":"song",
-      "name":"bounce (i just wanna dance)",
-      "author":"Joyful",
-      "speed":1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/bounce%20%28i%20just%20wanna%20dance%29.dfpwm",
-      "time":107
     },
     {
       "type":"song",
@@ -156,6 +132,38 @@
     },
     {
       "type":"song",
+      "name":"Forest Interlude",
+      "author":"David Wise",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Forest%20Interlude.dfpwm",
+      "time":280
+    },
+    {
+      "type":"song",
+      "name":"Stickerbush Symphony",
+      "author":"David Wise",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Stickerbush%20Symphony.dfpwm",
+      "time":265
+    },
+    {
+      "type":"song",
+      "name":"1979",
+      "author":"Smashing Pumpkins",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/1979.dfpwm",
+      "time":262
+    },
+    {
+      "type":"song",
+      "name":"Cherub Rock",
+      "author":"Smashing Pumpkins",
+      "speed":1,
+      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Cherub%20Rock.dfpwm",
+      "time":300
+    },
+    {
+      "type":"song",
       "name":"BLACK SHEEP",
       "author":"Lil Darkie",
       "speed":1,
@@ -209,14 +217,6 @@
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Minecraft%20Christmas.dfpwm",
       "time":343
-    },
-    {
-      "type":"song",
-      "name":";3",
-      "author": "SHTEPPI!",
-      "speed": 1,
-      "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/%3B3.dfpwm",
-      "time": 103
     },
     {
       "type":"song",
