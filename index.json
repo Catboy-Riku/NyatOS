@@ -5,7 +5,7 @@
     {
       "type":"song",
       "name":"meowballz",
-      "author": "Meow Mix",
+      "author":"Meow Mix",
       "speed": 1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/meowmix.dfpwm",
       "time": 295
