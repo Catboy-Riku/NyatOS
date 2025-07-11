@@ -4,240 +4,240 @@
   "songs": [
     {
       "type":"song",
-      "name":"Meow Mix",
-      "author": "meowballz",
+      "name":"meowballz",
+      "author": "Meow Mix",
       "speed": 1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/meowmix.dfpwm",
       "time": 295
     },
     {
       "type":"song",
-      "name":"Astronomical",
-      "author":"Travis Scott",
+      "name":"Travis Scott",
+      "author":"Astronomical",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Astronomical.dfpwm",
       "time":538
     },
     {
       "type":"song",
-      "name":"Calling You Up",
-      "author":"The EX Box Boys",
+      "name":"The EX Box Boys",
+      "author":"Calling You Up",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Calling%20You%20Up.dfpwm",
       "time":202
     },
     {
       "type":"song",
-      "name":"EMMV",
-      "author":"Cyranek",
+      "name":"Cyranek",
+      "author":"EMMV",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/EMMV.dfpwm",
       "time":731
     },
     {
       "type":"song",
-      "name":"21 Guns",
-      "author":"Green Day",
+      "name":"Green Day",
+      "author":"21 Guns",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/21%20Guns.dfpwm",
       "time": 326
     },
     {
       "type":"song",
-      "name":"4 A.M.",
-      "author":"Taeko Onuki",
+      "name":"Taeko Onuki",
+      "author":"4 A.M.",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/4%20A%2EM.dfpwm",
       "time":337
     },
     {
       "type":"song",
-      "name":"Hana",
-      "author":"Fujii Kaze",
+      "name":"Fujii Kaze",
+      "author":"Hana",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Hana.dfpwm",
       "time":247
     },
     {
       "type":"song",
-      "name":"I Can't Stop The Loneliness",
-      "author":"ANRI",
+      "name":"ANRI",
+      "author":"I Can't Stop The Loneliness",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/I%20Can%27t%20Stop%20The%20Loneliness.dfpwm",
       "time":264
     },
     {
       "type":"song",
-      "name":"Lady (Hear Me Tonight)",
-      "author":"Modjo",
+      "name":"Modjo",
+      "author":"Lady (Hear Me Tonight)",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Lady%20%28Hear%20Me%20Tonight%29.dfpwm",
       "time":307
     },
     {
       "type":"song",
-      "name":"Another Song About The Weekend",
-      "author":"A Day To Remember",
+      "name":"A Day To Remember",
+      "author":"Another Song About The Weekend",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Another%20Song%20About%20The%20Weekend.dfpwm",
       "time":223
     },
     {
       "type":"song",
-      "name":"Instrumental",
-      "author":"Black Country New Road",
+      "name":"Black Country New Road",
+      "author":"Instrumental",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Instrumental.dfpwm",
       "time":328
     },
     {
       "type":"song",
-      "name":"Dinosaurs Will Die",
-      "author":"NOFX",
+      "name":"NOFX",
+      "author":"Dinosaurs Will Die",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Dinosaurs%20Will%20Die.dfpwm",
       "time":171
     },
     {
       "type":"song",
-      "name":"Face Down",
-      "author":"The Red Jumpsuit Apparatus",
+      "name":"The Red Jumpsuit Apparatus",
+      "author":"Face Down",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Face%20Down.dfpwm",
       "time":192
     },
     {
       "type":"song",
-      "name":"Out with a Bang",
-      "author":"sElf",
+      "name":"sElf",
+      "author":"Out with a Bang",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Out%20with%20a%20Bang.dfpwm",
       "time":207
     },
     {
       "type":"song",
-      "name":"Reptilia",
-      "author":"The Strokes",
+      "name":"The Strokes",
+      "author":"Reptilia",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Reptilia.dfpwm",
       "time":216
     },
     {
       "type":"song",
-      "name":"Alfredo",
-      "author":"afourteen",
+      "name":"afourteen",
+      "author":"Alfredo",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Alfredo.dfpwm",
       "time":170
     },
     {
       "type":"song",
-      "name":"Forest Interlude",
-      "author":"David Wise",
+      "name":"David Wise",
+      "author":"Forest Interlude",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Forest%20Interlude.dfpwm",
       "time":280
     },
     {
       "type":"song",
-      "name":"Stickerbush Symphony",
-      "author":"David Wise",
+      "name":"David Wise",
+      "author":"Stickerbush Symphony",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Stickerbush%20Symphony.dfpwm",
       "time":265
     },
     {
       "type":"song",
-      "name":"1979",
-      "author":"Smashing Pumpkins",
+      "name":"Smashing Pumpkins",
+      "author":"1979",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/1979.dfpwm",
       "time":262
     },
     {
       "type":"song",
-      "name":"Cherub Rock",
-      "author":"Smashing Pumpkins",
+      "name":"Smashing Pumpkins",
+      "author":"Cherub Rock",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Cherub%20Rock.dfpwm",
       "time":300
     },
     {
       "type":"song",
-      "name":"BLACK SHEEP",
-      "author":"Lil Darkie",
+      "name":"Lil Darkie",
+      "author":"BLACK SHEEP",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/BLACK%20SHEEP.dfpwm",
       "time":292
     },
     {
       "type":"song",
-      "name":"COMFORT IN DISCOMFORT",
-      "author":"Lil Darkie",
+      "name":"Lil Darkie",
+      "author":"COMFORT IN DISCOMFORT",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/COMFORT%20IN%20DISCOMFORT.dfpwm",
       "time":519
     },
     {
       "type":"song",
-      "name":"UFO!",
-      "author":"SHTEPPI!",
+      "name":"SHTEPPI!",
+      "author":"UFO!",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/UFO%21.dfpwm",
       "time":115
     },
     {
       "type":"song",
-      "name":"OPPER STOPPER!",
-      "author":"SHTEPPI!",
+      "name":"SHTEPPI!",
+      "author":"OPPER STOPPER!",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/OPPER%20STOPPER%21.dfpwm",
       "time":99
     },
     {
       "type":"song",
-      "name":"POV I OLLIE OVER UR GRAVE!",
-      "author":"SHTEPPI!",
+      "name":"SHTEPPI!",
+      "author":"POV I OLLIE OVER UR GRAVE!",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/POV%20I%20OLLIE%20OVER%20UR%20GRAVE%21.dfpwm",
       "time":105
     },
     {
       "type":"song",
-      "name":"Euphemia",
-      "author":"Area 11",
+      "name":"Area 11",
+      "author":"Euphemia",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Euphemia.dfpwm",
       "time":286
     },
     {
       "type":"song",
-      "name":"All The Lights In The Sky",
-      "author":"Area 11",
+      "name":"Area 11",
+      "author":"All The Lights In The Sky",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/All%20The%20Lights%20In%20The%20Sky.dfpwm",
       "time":289
     },
     {
       "type":"song",
-      "name":"Heaven-Piercing Giga Drill",
-      "author":"Area 11",
+      "name":"Area 11",
+      "author":"Heaven-Piercing Giga Drill",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Heaven%2DPiercing%20Giga%20Drill.dfpwm",
       "time":259
     },
     {
       "type":"song",
-      "name":"Knightmare-Frame",
-      "author":"Area 11",
+      "name":"Area 11",
+      "author":"Knightmare-Frame",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Knightmare%2DFrame.dfpwm",
       "time":205
     },
     {
       "type":"song",
-      "name":"Minecraft Christmas",
-      "author":"Area 11, The Yogscast",
+      "name":"Area 11, The Yogscast",
+      "author":"Minecraft Christmas",
       "speed":1,
       "file":"https://github.com/Catboy-Riku/NyatOS/raw/main/music/Minecraft%20Christmas.dfpwm",
       "time":343
