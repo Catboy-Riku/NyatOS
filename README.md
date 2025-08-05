@@ -1,5 +1,5 @@
 # NyatOS
-Welcome to the Neko Yip Advanced Text Operating System! Or NyatOS for short.<br />
+Welcome to the Neko Yap Advanced Text Operating System! Or NyatOS for short.<br />
 The official operating system of Nyatopia! (Thats just my colony lol)<br />
 A super simple text based OS with its own custom Musicify integration and some other programs for Computer Craft.<br />
 For the people who dont like all the kerfuffle of a complicated OS, just paste and go.<br />
