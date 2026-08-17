@@ -12,7 +12,7 @@ Default user logins are as follows:<br />
 <br />
 *Yo a little help here!?... Alright alright I got it, stand back son.. One, one, one, uhhmmmuhhhhh one!<br />*
 <br />
-Admin User : Riku<br />
+Admin User : Admin<br />
 Admin Pass : 1111<br />
 <br />
 Guest User : Guest<br />
@@ -25,14 +25,9 @@ Simply login using the default admin login, then change what you want from there
 <br />
 # Installation
 
-Installing it is super easy, just type ONE of the commands below into a fresh computer,<br />
+Installing it is super easy, just paste the command below into a fresh computer,<br />
 wait for it to ask you to press enter, then it should reboot automatically into NyatOS.
 
-For NyatOS [Public](https://pastebin.com/jewpSesL) type:
-```
-wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installPublic.lua
-```
-For NyatOS [Secure](https://pastebin.com/XFgHwpHA) type:
 ```
 wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installSecure.lua
 ```
