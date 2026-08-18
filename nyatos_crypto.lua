@@ -1,9 +1,8 @@
-local aes = dofile("aes.lua")
+dofile("aes.lua")
+
 local sha = dofile("sha2.lua")
 
 local crypto = {}
-
--- Helpers
 
 local function hexToBinary(hex)
     return sha.hex_to_bin(hex)
@@ -47,36 +46,238 @@ local function constantTimeEquals(a, b)
     return difference == 0
 end
 
-local nonceCounter = 0
-
-local function makeNonce()
-    nonceCounter =
-        nonceCounter + 1
-
-    local source =
-        tostring(os.epoch("utc"))
-        .. ":"
-        .. tostring(os.getComputerID())
-        .. ":"
-        .. tostring(nonceCounter)
-
-    local digest =
-        sha.sha256(source)
-
+local function hmacSha256(key, message)
     return hexToBinary(
-        digest:sub(1, 32)
+        sha.hmac(
+            sha.sha256,
+            key,
+            message
+        )
     )
 end
 
-function crypto.encrypt(masterKey, plaintext, associatedData)
+local function loadNonceCounters(nonceFile)
+    if not fs.exists(nonceFile) then
+        return {}
+    end
+
+    local file, err =
+        fs.open(
+            nonceFile,
+            "r"
+        )
+
+    if not file then
+        error(
+            "Could not open nonce file: "
+            .. tostring(err)
+        )
+    end
+
+    local contents =
+        file.readAll()
+
+    file.close()
+
+    if contents == "" then
+        return {}
+    end
+
+    local counters =
+        textutils.unserialize(
+            contents
+        )
+
+    if type(counters) ~= "table" then
+        error(
+            "Nonce file is corrupted: "
+            .. tostring(nonceFile)
+        )
+    end
+
+    return counters
+end
+
+local function saveNonceCounters(
+    nonceFile,
+    counters
+)
+    local file, err =
+        fs.open(
+            nonceFile,
+            "w"
+        )
+
+    if not file then
+        error(
+            "Could not write nonce file: "
+            .. tostring(err)
+        )
+    end
+
+    file.write(
+        textutils.serialize(
+            counters
+        )
+    )
+
+    file.close()
+end
+
+local function nextNonce(
+    masterKey,
+    nonceFile,
+    context
+)
+    if type(nonceFile) ~= "string"
+        or nonceFile == ""
+    then
+        return false,
+            nil,
+            "Nonce file was not specified."
+    end
+
+    if type(context) ~= "string"
+        or context == ""
+    then
+        return false,
+            nil,
+            "Nonce context was not specified."
+    end
+
+    local loadOK,
+        counters =
+        pcall(
+            function()
+                return loadNonceCounters(
+                    nonceFile
+                )
+            end
+        )
+
+    if not loadOK then
+        return false,
+            nil,
+            counters
+    end
+
+    local counter =
+        tonumber(
+            counters[context]
+        )
+
+    if counter == nil then
+        counter = 0
+    end
+
+    counter =
+        counter + 1
+
+    counters[context] =
+        counter
+
+    local saveOK,
+        saveError =
+        pcall(
+            function()
+                saveNonceCounters(
+                    nonceFile,
+                    counters
+                )
+            end
+        )
+
+    if not saveOK then
+        return false,
+            nil,
+            saveError
+    end
+
+    local nonceSource =
+        context
+        .. "\0"
+        .. tostring(counter)
+
+    local nonceDigest =
+        sha.sha256(
+            masterKey
+            .. "\0"
+            .. nonceSource
+        )
+
+    local nonce =
+        hexToBinary(
+            nonceDigest:sub(
+                1,
+                32
+            )
+        )
+
+    return true,
+        nonce
+end
+
+local function makeCipher(
+    key,
+    nonce
+)
+    return Cipher:new(
+        nil,
+        key,
+        {
+            string.byte(
+                nonce,
+                1,
+                4
+            ),
+
+            string.byte(
+                nonce,
+                5,
+                8
+            ),
+
+            string.byte(
+                nonce,
+                9,
+                12
+            ),
+
+            string.byte(
+                nonce,
+                13,
+                16
+            )
+        }
+    )
+end
+
+local function encryptWithNonce(
+    masterKey,
+    plaintext,
+    associatedData,
+    nonce
+)
     if type(masterKey) ~= "string"
         or #masterKey < 16
     then
-        return false, nil, "Encryption key is too short."
+        return false,
+            nil,
+            "Encryption key is too short."
     end
 
     if type(plaintext) ~= "string" then
-        return false, nil, "Plaintext must be a string."
+        return false,
+            nil,
+            "Plaintext must be a string."
+    end
+
+    if type(nonce) ~= "string"
+        or #nonce ~= 16
+    then
+        return false,
+            nil,
+            "Invalid nonce."
     end
 
     associatedData =
@@ -94,22 +295,10 @@ function crypto.encrypt(masterKey, plaintext, associatedData)
             "NyatOS authentication"
         )
 
-    local nonce =
-        makeNonce()
-
     local cipher =
-        Cipher:new(
-            nil,
+        makeCipher(
             encryptionKey,
-            {
-                string.byte(nonce, 1, 4)
-                    ,
-                string.byte(nonce, 5, 8)
-                    ,
-                string.byte(nonce, 9, 12)
-                    ,
-                string.byte(nonce, 13, 16)
-            }
+            nonce
         )
 
     local ciphertext =
@@ -124,12 +313,9 @@ function crypto.encrypt(masterKey, plaintext, associatedData)
         .. ciphertext
 
     local mac =
-        hexToBinary(
-            sha.hmac(
-                sha.sha256,
-                authenticationKey,
-                authenticatedData
-            )
+        hmacSha256(
+            authenticationKey,
+            authenticatedData
         )
 
     return true, {
@@ -139,11 +325,47 @@ function crypto.encrypt(masterKey, plaintext, associatedData)
     }
 end
 
-function crypto.decrypt(masterKey, packet, associatedData)
+function crypto.encrypt(
+    masterKey,
+    plaintext,
+    associatedData,
+    nonceFile,
+    nonceContext
+)
+    local nonceOK,
+        nonce,
+        nonceError =
+        nextNonce(
+            masterKey,
+            nonceFile,
+            nonceContext
+        )
+
+    if not nonceOK then
+        return false,
+            nil,
+            nonceError
+    end
+
+    return encryptWithNonce(
+        masterKey,
+        plaintext,
+        associatedData,
+        nonce
+    )
+end
+
+function crypto.decrypt(
+    masterKey,
+    packet,
+    associatedData
+)
     if type(masterKey) ~= "string"
         or #masterKey < 16
     then
-        return false, nil, "Encryption key is too short."
+        return false,
+            nil,
+            "Encryption key is too short."
     end
 
     if type(packet) ~= "table"
@@ -151,15 +373,21 @@ function crypto.decrypt(masterKey, packet, associatedData)
         or type(packet.ciphertext) ~= "string"
         or type(packet.mac) ~= "string"
     then
-        return false, nil, "Invalid encrypted packet."
+        return false,
+            nil,
+            "Invalid encrypted packet."
     end
 
     if #packet.nonce ~= 16 then
-        return false, nil, "Invalid nonce."
+        return false,
+            nil,
+            "Invalid nonce."
     end
 
     if #packet.mac ~= 32 then
-        return false, nil, "Invalid authentication code."
+        return false,
+            nil,
+            "Invalid authentication code."
     end
 
     associatedData =
@@ -184,12 +412,9 @@ function crypto.decrypt(masterKey, packet, associatedData)
         .. packet.ciphertext
 
     local expectedMac =
-        hexToBinary(
-            sha.hmac(
-                sha.sha256,
-                authenticationKey,
-                authenticatedData
-            )
+        hmacSha256(
+            authenticationKey,
+            authenticatedData
         )
 
     if not constantTimeEquals(
@@ -202,18 +427,9 @@ function crypto.decrypt(masterKey, packet, associatedData)
     end
 
     local cipher =
-        Cipher:new(
-            nil,
+        makeCipher(
             encryptionKey,
-            {
-                string.byte(packet.nonce, 1, 4)
-                    ,
-                string.byte(packet.nonce, 5, 8)
-                    ,
-                string.byte(packet.nonce, 9, 12)
-                    ,
-                string.byte(packet.nonce, 13, 16)
-            }
+            packet.nonce
         )
 
     local plaintext =
@@ -221,7 +437,8 @@ function crypto.decrypt(masterKey, packet, associatedData)
             packet.ciphertext
         )
 
-    return true, plaintext
+    return true,
+        plaintext
 end
 
 crypto.constantTimeEquals =
