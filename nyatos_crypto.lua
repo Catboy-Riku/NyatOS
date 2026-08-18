@@ -444,4 +444,38 @@ end
 crypto.constantTimeEquals =
     constantTimeEquals
 
+function crypto.generateKey()
+    local source =
+        tostring(
+            os.epoch("utc")
+        )
+        .. "\0"
+        .. tostring(
+            os.getComputerID()
+        )
+        .. "\0"
+        .. tostring(
+            math.random(
+                1,
+                2147483647
+            )
+        )
+        .. "\0"
+        .. tostring(
+            math.random(
+                1,
+                2147483647
+            )
+        )
+        .. "\0"
+        .. tostring(
+            math.random(
+                1,
+                2147483647
+            )
+        )
+
+    return sha.sha256(source)
+end
+
 return crypto
