@@ -41,7 +41,7 @@ At first launch the entire program on Computer 0 takes up ~860,000 bytes of the 
 
 This will eventually cause an out of memory error if you make too much save data and don't change the max in CC:Tweaked's config.
 
-Just add a 0 to the very first config setting of ~computercraft-server.toml~:
+Just add a 0 to the very first config setting of `computercraft-server.toml`:
 
 ```toml
 computer_space_limit = 10000000
