@@ -1946,6 +1946,66 @@ local function playForestQuest(user)
 
     local running = true
     local victory = false
+    local forestMusicRunning = true
+    local forestMusicFile = "lib/Forest Interlude.dfpwm"
+    local forestMusicSpeaker = peripheral.find("speaker")
+
+	local function playForestMusic()
+		if not forestMusicSpeaker
+			or not fs.exists(forestMusicFile)
+		then
+			return
+		end
+
+		local dfpwm =
+			require("cc.audio.dfpwm")
+
+		local decoder =
+			dfpwm.make_decoder()
+
+		while forestMusicRunning do
+			local file =
+				fs.open(
+					forestMusicFile,
+					"rb"
+				)
+
+			if not file then
+				return
+			end
+
+			decoder =
+				dfpwm.make_decoder()
+
+			while forestMusicRunning do
+				local chunk =
+					file.read(
+						16 * 1024
+					)
+
+				if not chunk then
+					break
+				end
+
+				local audio =
+					decoder(chunk)
+
+				while forestMusicRunning
+					and not forestMusicSpeaker.playAudio(
+						audio
+					)
+				do
+					os.pullEvent(
+						"speaker_audio_empty"
+					)
+				end
+			end
+
+			file.close()
+		end
+
+		forestMusicSpeaker.stop()
+	end
 
     local function clearScreen()
         term.clear()
@@ -3150,16 +3210,30 @@ local function playForestQuest(user)
         pause()
     end
 
-    while running do
-        local locationFunction = locations[state.location]
+    local function runForestQuest()
+        while running do
+            local locationFunction =
+                locations[state.location]
 
-        if not locationFunction then
-            state.location = "entrance"
-            locationFunction = locations.entrance
+            if not locationFunction then
+                state.location = "entrance"
+                locationFunction = locations.entrance
+            end
+
+            locationFunction()
+            autoSaveGame()
         end
+    end
 
-        locationFunction()
-        autoSaveGame()
+    parallel.waitForAny(
+        runForestQuest,
+        playForestMusic
+    )
+
+    forestMusicRunning = false
+
+    if forestMusicSpeaker then
+        forestMusicSpeaker.stop()
     end
 
     if victory then
