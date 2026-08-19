@@ -6,6 +6,7 @@ Computer 0 (first computer placed on a MC server) is designated as the NyatOS se
 
 Server computer also functions as a client with server functions running in the background
 
+
 Default user logins are as follows:
 
 *Yo a little help here!?... Alright alright I got it, stand back son.. One, one, one, uhhmmmuhhhhh one!*
