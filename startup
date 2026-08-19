@@ -1946,40 +1946,53 @@ local function playForestQuest(user)
 
     local running = true
     local victory = false
-    local forestMusicRunning = true
-    local forestMusicFile = "lib/Forest Interlude.dfpwm"
-    local forestMusicSpeaker = peripheral.find("speaker")
+	local forestMusicRunning = true
+	local forestMusicURL =
+		"https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/music/Forest%20Interlude.dfpwm"
+
+	local forestMusicSpeaker =
+		peripheral.find("speaker")
+
 
 	local function playForestMusic()
-		if not forestMusicSpeaker
-			or not fs.exists(forestMusicFile)
-		then
+		if not forestMusicSpeaker then
+			return
+		end
+
+		if not http then
 			return
 		end
 
 		local dfpwm =
 			require("cc.audio.dfpwm")
 
-		local decoder =
-			dfpwm.make_decoder()
-
 		while forestMusicRunning do
-			local file =
-				fs.open(
-					forestMusicFile,
-					"rb"
+			local response,
+				requestError =
+				http.get(
+					forestMusicURL,
+					nil,
+					true
 				)
 
-			if not file then
+			if not response then
 				return
 			end
 
-			decoder =
+			local responseCode =
+				response.getResponseCode()
+
+			if responseCode ~= 200 then
+				response.close()
+				return
+			end
+
+			local decoder =
 				dfpwm.make_decoder()
 
 			while forestMusicRunning do
 				local chunk =
-					file.read(
+					response.read(
 						16 * 1024
 					)
 
@@ -1992,7 +2005,8 @@ local function playForestQuest(user)
 
 				while forestMusicRunning
 					and not forestMusicSpeaker.playAudio(
-						audio
+						audio,
+						0.5
 					)
 				do
 					os.pullEvent(
@@ -2001,7 +2015,11 @@ local function playForestQuest(user)
 				end
 			end
 
-			file.close()
+			response.close()
+
+			if forestMusicRunning then
+				sleep(0.1)
+			end
 		end
 
 		forestMusicSpeaker.stop()
@@ -3210,31 +3228,37 @@ local function playForestQuest(user)
         pause()
     end
 
-    local function runForestQuest()
-        while running do
-            local locationFunction =
-                locations[state.location]
+	local function runForestQuest()
+		while running do
+			local locationFunction =
+				locations[state.location]
 
-            if not locationFunction then
-                state.location = "entrance"
-                locationFunction = locations.entrance
-            end
+			if not locationFunction then
+				state.location = "entrance"
+				locationFunction = locations.entrance
+			end
 
-            locationFunction()
-            autoSaveGame()
-        end
-    end
+			locationFunction()
+			autoSaveGame()
+		end
+	end
 
-    parallel.waitForAny(
-        runForestQuest,
-        playForestMusic
-    )
+	if forestMusicSpeaker
+		and http
+	then
+		parallel.waitForAny(
+			runForestQuest,
+			playForestMusic
+		)
+	else
+		runForestQuest()
+	end
 
-    forestMusicRunning = false
+	forestMusicRunning = false
 
-    if forestMusicSpeaker then
-        forestMusicSpeaker.stop()
-    end
+	if forestMusicSpeaker then
+		forestMusicSpeaker.stop()
+	end
 
     if victory then
         clearScreen()
