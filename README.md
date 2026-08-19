@@ -22,8 +22,7 @@ Guest Pass : $pass42
 
 Keep in mind that the logins are case-sensitive.
 
-Also I would highly recommend changing the admin password and username by using the OS after installing.
-
+Also I would highly recommend changing the admin password and username by using the OS after installing. <br />
 Simply login using the default admin login, then change what you want from there.
 
 # Installation
