@@ -16,9 +16,6 @@ sleep(1)
 shell.run("wget run https://raw.githubusercontent.com/knijn/musicify/main/install.lua")
 sleep(1)
 
-shell.run("wget https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/music/Forest%20Interlude.dfpwm lib/Forest%20Interlude.dfpwm")
-sleep(1)
-
 shell.run("set musicify.repo https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/index.json")
 sleep(3)
 
