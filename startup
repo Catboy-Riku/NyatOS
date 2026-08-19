@@ -3382,6 +3382,17 @@ local function playBlackjack(user)
 			)
 
 		if not success then
+			success =
+				pcall(
+					function()
+						commands.exec(
+							"give @p minecraft:gold_ingot"
+						)
+					end
+				)
+			end
+
+		if not success then
 			local message1 =
 				"Withdrawals require"
 
