@@ -1,5 +1,4 @@
 # NyatOS
-Welcome to NyatOS.<br />
 
 A super simple text based OS with its own custom Musicify integration and some other programs for Computer Craft.<br />
 For the people who dont like all the kerfuffle of a complicated OS, just paste and go.<br />
