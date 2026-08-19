@@ -54,6 +54,7 @@ This gives each computer 10MB storage max instead of the measly 1MB.
 # Credits
 
 Musicify - knijn <br />
-Blackjack base - astralwuzhere <br />
 AES translation - zyxkad <br />
-Pure lua sha2 - Egor-Skriptunoff
+Pure lua sha2 - Egor-Skriptunoff <br />
+Buccshot - mydudesima <br />
+Blackjack base - astralwuzhere
