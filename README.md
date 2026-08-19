@@ -23,7 +23,6 @@ Simply login using the default admin login, then change what you want from there
 # Installation
 Installing it is super easy, just paste the command below into a fresh computer,<br />
 wait for it to ask you to press enter, then it should reboot automatically into NyatOS.
-
 ```
 wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installSecure.lua
 ```
