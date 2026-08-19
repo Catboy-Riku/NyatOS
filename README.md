@@ -2,7 +2,8 @@
 A simple text based OS with its own custom Musicify integration and some other programs for Computer Craft.<br />
 For the people who dont like all the kerfuffle of a complicated OS, just paste and go.
 
-Computer 0 (first computer placed on a MC server) is designated as the NyatOS server, any subsequent computers are clients.
+Computer 0 (first computer placed on a MC server) is designated as the NyatOS server, <br />
+any subsequent computers are clients.
 
 Server computer also functions as a client with server functions running in the background
 
