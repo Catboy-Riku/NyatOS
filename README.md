@@ -51,3 +51,8 @@ computer_space_limit = 10000000
 ```
 
 This gives each computer 10MB storage max instead of the measly 1MB.
+
+# Credits
+
+Musicify base - knijn <br />
+Blackjack base - astralwuzhere
