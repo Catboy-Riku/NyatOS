@@ -6779,10 +6779,6 @@ local function handleMenuOption(option, user)
                         screenH =
                         previousTerm.getSize()
 
-                    ------------------------------------------------
-                    -- Temporary window used by the shell.
-                    ------------------------------------------------
-
                     local outputWindow =
                         window.create(
                             previousTerm,
@@ -6803,16 +6799,7 @@ local function handleMenuOption(option, user)
 
                     outputWindow.clear()
 
-                    ------------------------------------------------
-                    -- Complete scrollback history.
-                    ------------------------------------------------
-
                     local history = {}
-
-                    ------------------------------------------------
-                    -- Save lines before the window scrolls them
-                    -- out of its visible buffer.
-                    ------------------------------------------------
 
                     local originalScroll =
                         outputWindow.scroll
@@ -6850,11 +6837,6 @@ local function handleMenuOption(option, user)
                             )
                         end
 
-                    ------------------------------------------------
-                    -- Copy the current visible window into a
-                    -- temporary table.
-                    ------------------------------------------------
-
                     local function getCurrentLines()
                         local currentLines = {}
 
@@ -6883,10 +6865,6 @@ local function handleMenuOption(option, user)
 
                         return currentLines
                     end
-
-                    ------------------------------------------------
-                    -- Build the complete output currently available.
-                    ------------------------------------------------
 
                     local function getAllLines()
                         local allLines = {}
@@ -6926,18 +6904,9 @@ local function handleMenuOption(option, user)
                         return allLines
                     end
 
-                    ------------------------------------------------
-                    -- Scroll state.
-                    ------------------------------------------------
-
                     local scrollPosition = 0
                     local userHasScrolled = false
                     local commandFinished = false
-
-                    ------------------------------------------------
-                    -- Redraw the physical screen from the complete
-                    -- history instead of scrolling the window itself.
-                    ------------------------------------------------
 
                     local function redraw()
                         local allLines =
@@ -7012,10 +6981,6 @@ local function handleMenuOption(option, user)
                         end
                     end
 
-                    ------------------------------------------------
-                    -- Run the command normally.
-                    ------------------------------------------------
-
                     local commandOK = true
                     local commandError = nil
 
@@ -7040,11 +7005,6 @@ local function handleMenuOption(option, user)
 
                         commandFinished = true
                     end
-
-                    ------------------------------------------------
-                    -- Handle mouse-wheel scrolling WHILE the command
-                    -- is still running.
-                    ------------------------------------------------
 
                     local function handleMouseScroll()
                         while not commandFinished do
@@ -7099,11 +7059,6 @@ local function handleMenuOption(option, user)
                         end
                     end
 
-                    ------------------------------------------------
-                    -- Run the command and mouse-wheel handler
-                    -- simultaneously.
-                    ------------------------------------------------
-
                     parallel.waitForAny(
                         runCommand,
                         handleMouseScroll
@@ -7112,10 +7067,6 @@ local function handleMenuOption(option, user)
                     term.redirect(
                         previousTerm
                     )
-
-                    ------------------------------------------------
-                    -- If the command crashed, append the error.
-                    ------------------------------------------------
 
                     if not commandOK then
                         local cursorX,
@@ -7134,10 +7085,6 @@ local function handleMenuOption(option, user)
                             )
                         )
                     end
-
-                    ------------------------------------------------
-                    -- Final complete output after the command ends.
-                    ------------------------------------------------
 
                     local allLines =
                         getAllLines()
@@ -7159,10 +7106,6 @@ local function handleMenuOption(option, user)
                         false
 
                     redraw()
-
-                    ------------------------------------------------
-                    -- Browse the finished command output.
-                    ------------------------------------------------
 
                     while true do
                         local event,
