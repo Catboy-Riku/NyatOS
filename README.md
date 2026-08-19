@@ -37,7 +37,7 @@ wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installSecure
 
 # Known Issues
 
-At first launch the entire program on Computer 0 takes up 860,160 bytes of the default CC:Tweaked config max 1,000,000.
+At first launch the entire program on Computer 0 takes up ~860,000 bytes of the default CC:Tweaked config max 1,000,000.
 
 This will eventually cause an out of memory error if you make too much save data and don't change the max in CC:Tweaked's config.
 
