@@ -41,9 +41,10 @@ At first launch the entire program on Computer 0 takes up ~860,000 bytes of the 
 
 This will eventually cause an out of memory error if you make too much save data and don't change the max in CC:Tweaked's config.
 
-Similarly when trying to install the OS more then once per load of your Minecraft world it will give an out of memory error.
+Similarly, when trying to install the OS more then once per load-in into your Minecraft world it will give an out of memory error.<br />
+This part can be hotfixed by simply exiting to the Minecraft main menu, loading back in, and trying again.
 
-Just add a 0 to the very first config setting of `computercraft-server.toml`:
+To provide a permanant fix just add a 0 to the very first config setting of `computercraft-server.toml`:
 
 ```toml
 computer_space_limit = 10000000
