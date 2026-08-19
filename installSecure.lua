@@ -1,4 +1,4 @@
-shell.run("pastebin get XFgHwpHA startup")
+shell.run("wget https://raw.githubusercontent.com/Catboy-Riku/NyatOS/refs/heads/main/startup startup")
 sleep(1)
 
 shell.run("wget https://gist.githubusercontent.com/zyxkad/a5e02d16d244b20b026ecfb06f662210/raw/aes.lua aes.lua")
