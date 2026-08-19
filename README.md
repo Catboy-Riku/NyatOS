@@ -56,5 +56,5 @@ This gives each computer 10MB storage max instead of the measly 1MB.
 
 Musicify base - knijn <br />
 Blackjack base - astralwuzhere <br />
-AES base - zyxkad <br />
-sha2 base- Egor-Skriptunoff
+AES translation - zyxkad <br />
+Pure lua sha2 - Egor-Skriptunoff
