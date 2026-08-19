@@ -41,9 +41,9 @@ wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installOS.lua
 
 # Known Issues
 
-At first launch the entire program on Computer 0 takes up ~860,000 bytes of the 1,000,000 max defaulted by CC:Tweaked config.
+At first launch the entire program on Computer 0 takes up ~860,000 bytes of the 1,000,000 max defaulted by the CC:Tweaked config.
 
-This will eventually cause an out of memory error if you make too much save data and don't change the max in CC:Tweaked's config.
+This will eventually cause an out of memory error if you make too much save data and don't change the max in the CC:Tweaked config.
 
 Similarly, when trying to install the OS more then once per load-in into your Minecraft world it will give an out of memory error.<br />
 This part can be hotfixed by simply exiting to the Minecraft main menu, loading back in, and trying again.
