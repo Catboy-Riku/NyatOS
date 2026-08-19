@@ -3372,25 +3372,35 @@ local function playBlackjack(user)
 
 		sleep(1.5)
 
-		local success =
+		local copperCommandOK,
+			copperSuccess =
 			pcall(
 				function()
-					commands.exec(
+					return commands.exec(
 						"give @p companions:copper_coin"
 					)
 				end
 			)
 
+		local success =
+			copperCommandOK
+			and copperSuccess == true
+
 		if not success then
-			success =
+			local goldCommandOK,
+				goldSuccess =
 				pcall(
 					function()
-						commands.exec(
+						return commands.exec(
 							"give @p minecraft:gold_ingot"
 						)
 					end
 				)
-			end
+
+			success =
+				goldCommandOK
+				and goldSuccess == true
+		end
 
 		if not success then
 			local message1 =
@@ -5766,11 +5776,6 @@ local function handleMenuOption(option, user)
                 totalSpace / 1024 / 1024 * 10
             ) / 10
 
-        local freeMB =
-            math.floor(
-                freeSpace / 1024 / 1024 * 10
-            ) / 10
-
         print("System Info:")
         print("")
         print("CPU Usage: 1%")
@@ -5782,7 +5787,7 @@ local function handleMenuOption(option, user)
             .. totalMB
             .. " MB"
         )
-        print("Disk Free: " .. freeMB .. " MB")
+        print("Disk Free: " .. freeSpace .. " bytes")
         print("")
         print("Press Enter to return to the menu...")
 
