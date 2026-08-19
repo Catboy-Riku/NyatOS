@@ -36,7 +36,7 @@ Installing it is super easy, just paste the command below into a fresh computer,
 wait for it to ask you to press enter, then it should reboot automatically into NyatOS.
 
 ```sh
-wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installSecure.lua
+wget run https://raw.githubusercontent.com/Catboy-Riku/NyatOS/main/installOS.lua
 ```
 
 # Known Issues
